@@ -1,0 +1,3 @@
+/home/zj/share/av/build/CMakeFiles/rebuild_cache.dir
+/home/zj/share/av/build/CMakeFiles/edit_cache.dir
+/home/zj/share/av/build/CMakeFiles/mymain.dir
