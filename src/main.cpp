@@ -1,6 +1,7 @@
 #include "common.h"
 #include "video.h"
 #include "audio.h"
+#include "lxy_muxer.h"
 FILE *fp;
 void sig_fun(int mun)
 {
@@ -22,20 +23,18 @@ int main()
     ai_aenc_Bind();
     aenc_callcb(); 
     //放音频*/
-    ao_set();
+  /*   ao_set();
     adec_set();
-    test_read_adec(); 
-/*     init_rtsp();
+    test_read_adec();  */
+    init_rtsp();
     vi_set();
     venc_set(IMAGE_TYPE_NV12,1920,1080);
     vi_venc_bind();
     venc_register_cb();
-
     ai_set();
     aenc_set();
     ai_aenc_Bind();
-    aenc_callcb(); */
-
+    aenc_callcb();
     while(1)
     {
         

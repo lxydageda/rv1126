@@ -70,9 +70,22 @@ CMakeFiles/mymain.dir/src/audio.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mymain.dir/src/audio.cpp.s"
 	/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//bin/arm-linux-gnueabihf-g++ --sysroot=/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//arm-buildroot-linux-gnueabihf/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zj/share/av/src/audio.cpp -o CMakeFiles/mymain.dir/src/audio.cpp.s
 
+CMakeFiles/mymain.dir/src/lxy_muxcer.cpp.o: CMakeFiles/mymain.dir/flags.make
+CMakeFiles/mymain.dir/src/lxy_muxcer.cpp.o: ../src/lxy_muxcer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zj/share/av/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mymain.dir/src/lxy_muxcer.cpp.o"
+	/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//bin/arm-linux-gnueabihf-g++ --sysroot=/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//arm-buildroot-linux-gnueabihf/sysroot  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mymain.dir/src/lxy_muxcer.cpp.o -c /home/zj/share/av/src/lxy_muxcer.cpp
+
+CMakeFiles/mymain.dir/src/lxy_muxcer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mymain.dir/src/lxy_muxcer.cpp.i"
+	/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//bin/arm-linux-gnueabihf-g++ --sysroot=/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//arm-buildroot-linux-gnueabihf/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zj/share/av/src/lxy_muxcer.cpp > CMakeFiles/mymain.dir/src/lxy_muxcer.cpp.i
+
+CMakeFiles/mymain.dir/src/lxy_muxcer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mymain.dir/src/lxy_muxcer.cpp.s"
+	/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//bin/arm-linux-gnueabihf-g++ --sysroot=/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//arm-buildroot-linux-gnueabihf/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zj/share/av/src/lxy_muxcer.cpp -o CMakeFiles/mymain.dir/src/lxy_muxcer.cpp.s
+
 CMakeFiles/mymain.dir/src/main.cpp.o: CMakeFiles/mymain.dir/flags.make
 CMakeFiles/mymain.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zj/share/av/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mymain.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zj/share/av/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mymain.dir/src/main.cpp.o"
 	/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//bin/arm-linux-gnueabihf-g++ --sysroot=/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//arm-buildroot-linux-gnueabihf/sysroot  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mymain.dir/src/main.cpp.o -c /home/zj/share/av/src/main.cpp
 
 CMakeFiles/mymain.dir/src/main.cpp.i: cmake_force
@@ -85,7 +98,7 @@ CMakeFiles/mymain.dir/src/main.cpp.s: cmake_force
 
 CMakeFiles/mymain.dir/src/video.cpp.o: CMakeFiles/mymain.dir/flags.make
 CMakeFiles/mymain.dir/src/video.cpp.o: ../src/video.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zj/share/av/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mymain.dir/src/video.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zj/share/av/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mymain.dir/src/video.cpp.o"
 	/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//bin/arm-linux-gnueabihf-g++ --sysroot=/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//arm-buildroot-linux-gnueabihf/sysroot  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mymain.dir/src/video.cpp.o -c /home/zj/share/av/src/video.cpp
 
 CMakeFiles/mymain.dir/src/video.cpp.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/mymain.dir/src/video.cpp.s: cmake_force
 
 CMakeFiles/mymain.dir/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_common_isp.c.o: CMakeFiles/mymain.dir/flags.make
 CMakeFiles/mymain.dir/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_common_isp.c.o: /home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_common_isp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zj/share/av/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mymain.dir/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_common_isp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zj/share/av/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mymain.dir/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_common_isp.c.o"
 	/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//bin/arm-linux-gnueabihf-gcc --sysroot=/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mymain.dir/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_common_isp.c.o   -c /home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_common_isp.c
 
 CMakeFiles/mymain.dir/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_common_isp.c.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/mymain.dir/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_2023101
 
 CMakeFiles/mymain.dir/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_fake_isp.c.o: CMakeFiles/mymain.dir/flags.make
 CMakeFiles/mymain.dir/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_fake_isp.c.o: /home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_fake_isp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zj/share/av/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mymain.dir/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_fake_isp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zj/share/av/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/mymain.dir/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_fake_isp.c.o"
 	/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//bin/arm-linux-gnueabihf-gcc --sysroot=/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011//buildroot/output/rockchip_rv1126_rv1109_spi_nand/host//arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mymain.dir/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_fake_isp.c.o   -c /home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_fake_isp.c
 
 CMakeFiles/mymain.dir/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_fake_isp.c.i: cmake_force
@@ -125,6 +138,7 @@ CMakeFiles/mymain.dir/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_2023101
 # Object files for target mymain
 mymain_OBJECTS = \
 "CMakeFiles/mymain.dir/src/audio.cpp.o" \
+"CMakeFiles/mymain.dir/src/lxy_muxcer.cpp.o" \
 "CMakeFiles/mymain.dir/src/main.cpp.o" \
 "CMakeFiles/mymain.dir/src/video.cpp.o" \
 "CMakeFiles/mymain.dir/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_common_isp.c.o" \
@@ -134,13 +148,14 @@ mymain_OBJECTS = \
 mymain_EXTERNAL_OBJECTS =
 
 mymain: CMakeFiles/mymain.dir/src/audio.cpp.o
+mymain: CMakeFiles/mymain.dir/src/lxy_muxcer.cpp.o
 mymain: CMakeFiles/mymain.dir/src/main.cpp.o
 mymain: CMakeFiles/mymain.dir/src/video.cpp.o
 mymain: CMakeFiles/mymain.dir/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_common_isp.c.o
 mymain: CMakeFiles/mymain.dir/home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/common/sample_fake_isp.c.o
 mymain: CMakeFiles/mymain.dir/build.make
 mymain: CMakeFiles/mymain.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zj/share/av/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable mymain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zj/share/av/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable mymain"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mymain.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

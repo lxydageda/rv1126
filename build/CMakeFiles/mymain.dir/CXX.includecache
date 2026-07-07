@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../include/audio.h
-common.h
-../include/common.h
-
 ../include/common.h
 assert.h
 -
@@ -2901,18 +2897,6 @@ rk_aiq_user_api_sysctl.h
 /home/zj/EbainaSDK/RV1126_RV1109_LINUX_SDK_V2.2.5.1_20231011/external/rkmedia/examples/librtsp/rtsp_demo.h
 stdint.h
 -
-
-/home/zj/share/av/src/audio.cpp
-audio.h
-/home/zj/share/av/src/audio.h
-
-/home/zj/share/av/src/main.cpp
-common.h
-/home/zj/share/av/src/common.h
-video.h
-/home/zj/share/av/src/video.h
-audio.h
-/home/zj/share/av/src/audio.h
 
 /home/zj/share/av/src/video.cpp
 video.h

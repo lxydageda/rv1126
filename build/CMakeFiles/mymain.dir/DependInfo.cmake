@@ -37,6 +37,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/zj/share/av/src/audio.cpp" "/home/zj/share/av/build/CMakeFiles/mymain.dir/src/audio.cpp.o"
+  "/home/zj/share/av/src/lxy_muxcer.cpp" "/home/zj/share/av/build/CMakeFiles/mymain.dir/src/lxy_muxcer.cpp.o"
   "/home/zj/share/av/src/main.cpp" "/home/zj/share/av/build/CMakeFiles/mymain.dir/src/main.cpp.o"
   "/home/zj/share/av/src/video.cpp" "/home/zj/share/av/build/CMakeFiles/mymain.dir/src/video.cpp.o"
   )

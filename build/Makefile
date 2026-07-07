@@ -204,6 +204,33 @@ src/audio.cpp.s:
 	$(MAKE) -f CMakeFiles/mymain.dir/build.make CMakeFiles/mymain.dir/src/audio.cpp.s
 .PHONY : src/audio.cpp.s
 
+src/lxy_muxcer.o: src/lxy_muxcer.cpp.o
+
+.PHONY : src/lxy_muxcer.o
+
+# target to build an object file
+src/lxy_muxcer.cpp.o:
+	$(MAKE) -f CMakeFiles/mymain.dir/build.make CMakeFiles/mymain.dir/src/lxy_muxcer.cpp.o
+.PHONY : src/lxy_muxcer.cpp.o
+
+src/lxy_muxcer.i: src/lxy_muxcer.cpp.i
+
+.PHONY : src/lxy_muxcer.i
+
+# target to preprocess a source file
+src/lxy_muxcer.cpp.i:
+	$(MAKE) -f CMakeFiles/mymain.dir/build.make CMakeFiles/mymain.dir/src/lxy_muxcer.cpp.i
+.PHONY : src/lxy_muxcer.cpp.i
+
+src/lxy_muxcer.s: src/lxy_muxcer.cpp.s
+
+.PHONY : src/lxy_muxcer.s
+
+# target to generate assembly for a file
+src/lxy_muxcer.cpp.s:
+	$(MAKE) -f CMakeFiles/mymain.dir/build.make CMakeFiles/mymain.dir/src/lxy_muxcer.cpp.s
+.PHONY : src/lxy_muxcer.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -276,6 +303,9 @@ help:
 	@echo "... src/audio.o"
 	@echo "... src/audio.i"
 	@echo "... src/audio.s"
+	@echo "... src/lxy_muxcer.o"
+	@echo "... src/lxy_muxcer.i"
+	@echo "... src/lxy_muxcer.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

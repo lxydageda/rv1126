@@ -6,7 +6,7 @@ void init_rtsp()
     g_rtsplive = create_rtsp_demo(554);
     g_rtsp_session = rtsp_new_session(g_rtsplive, "/9203");// rtsp://ip/9203
     //设置视频流
-    rtsp_set_video(g_rtsp_session, RTSP_CODEC_ID_VIDEO_H265, NULL, 0);
+    rtsp_set_video(g_rtsp_session, RTSP_CODEC_ID_VIDEO_H264, NULL, 0);
     rtsp_sync_video_ts(g_rtsp_session, rtsp_get_reltime(), rtsp_get_ntptime());
     //设置音频流
     rtsp_set_audio(g_rtsp_session,RTSP_CODEC_ID_AUDIO_G711A,NULL, 0);
@@ -74,7 +74,7 @@ void venc_set(IMAGE_TYPE_E imgtype,int width,int hight)
 {
     VENC_CHN_ATTR_S vencAttr;
     //编码器属性
-    vencAttr.stVencAttr.enType = RK_CODEC_TYPE_H265;//编码格式
+    vencAttr.stVencAttr.enType = RK_CODEC_TYPE_H264;//编码格式
     vencAttr.stVencAttr.imageType = imgtype;//图像格式
     vencAttr.stVencAttr.u32VirWidth = width;//stride宽度
     vencAttr.stVencAttr.u32VirHeight = hight;//stride高度
@@ -82,13 +82,20 @@ void venc_set(IMAGE_TYPE_E imgtype,int width,int hight)
     vencAttr.stVencAttr.u32PicWidth = width;//编码图像宽度
     vencAttr.stVencAttr.u32PicHeight = hight;//编码图像高度
     //码率控制器数据
-    vencAttr.stRcAttr.enRcMode = VENC_RC_MODE_H265VBR;//动态码率
+ /*    vencAttr.stRcAttr.enRcMode = VENC_RC_MODE_H265VBR;//动态码率
     vencAttr.stRcAttr.stH265Vbr.u32Gop = 30;//I帧间隔
     vencAttr.stRcAttr.stH265Vbr.u32SrcFrameRateDen = 1;
     vencAttr.stRcAttr.stH265Vbr.u32SrcFrameRateNum = 30;//数据源帧率30fps
     vencAttr.stRcAttr.stH265Vbr.fr32DstFrameRateDen = 1;
     vencAttr.stRcAttr.stH265Vbr.fr32DstFrameRateNum = 30;//目标帧率30fps
-    vencAttr.stRcAttr.stH265Vbr.u32MaxBitRate = width*hight;
+    vencAttr.stRcAttr.stH265Vbr.u32MaxBitRate = width*hight; */
+    vencAttr.stRcAttr.enRcMode = VENC_RC_MODE_H264VBR;//动态码率
+    vencAttr.stRcAttr.stH264Vbr.u32Gop = 30;//I帧间隔
+    vencAttr.stRcAttr.stH264Vbr.u32SrcFrameRateDen = 1;
+    vencAttr.stRcAttr.stH264Vbr.u32SrcFrameRateNum = 30;//数据源帧率30fps
+    vencAttr.stRcAttr.stH264Vbr.fr32DstFrameRateDen = 1;
+    vencAttr.stRcAttr.stH264Vbr.fr32DstFrameRateNum = 30;//目标帧率30fps
+    vencAttr.stRcAttr.stH264Vbr.u32MaxBitRate = width*hight;
     if(RK_MPI_VENC_CreateChn(0,&vencAttr))
     {
         printf("创建编码通道失败\n");
@@ -130,7 +137,6 @@ void venc_OutCbFunc(MEDIA_BUFFER mb)
         rtsp_do_event(g_rtsplive);
     }
     RK_MPI_MB_ReleaseBuffer(mb); 
-
 }
 
 void venc_register_cb()
