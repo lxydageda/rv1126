@@ -36,7 +36,7 @@ void muxer_set()
     MPP_CHN_S Vsrc;
     Vsrc.enModId = RK_ID_VENC;
     Vsrc.s32DevId = 0;
-    Vsrc.s32ChnId = 0;
+    Vsrc.s32ChnId = 2;
 
     MUXER_CHN_S dest;
     dest.enModId = RK_ID_MUXER;
@@ -46,7 +46,7 @@ void muxer_set()
 
     MPP_CHN_S Asrc;
     Asrc.enModId = RK_ID_AENC;
-    Asrc.s32ChnId = 0;
+    Asrc.s32ChnId = 1;
 
     dest.enChnType = MUXER_CHN_TYPE_AUDIO;
     RK_MPI_MUXER_Bind(&Asrc,&dest);

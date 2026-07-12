@@ -258,6 +258,60 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/mymain.dir/build.make CMakeFiles/mymain.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/netcheck.o: src/netcheck.cpp.o
+
+.PHONY : src/netcheck.o
+
+# target to build an object file
+src/netcheck.cpp.o:
+	$(MAKE) -f CMakeFiles/mymain.dir/build.make CMakeFiles/mymain.dir/src/netcheck.cpp.o
+.PHONY : src/netcheck.cpp.o
+
+src/netcheck.i: src/netcheck.cpp.i
+
+.PHONY : src/netcheck.i
+
+# target to preprocess a source file
+src/netcheck.cpp.i:
+	$(MAKE) -f CMakeFiles/mymain.dir/build.make CMakeFiles/mymain.dir/src/netcheck.cpp.i
+.PHONY : src/netcheck.cpp.i
+
+src/netcheck.s: src/netcheck.cpp.s
+
+.PHONY : src/netcheck.s
+
+# target to generate assembly for a file
+src/netcheck.cpp.s:
+	$(MAKE) -f CMakeFiles/mymain.dir/build.make CMakeFiles/mymain.dir/src/netcheck.cpp.s
+.PHONY : src/netcheck.cpp.s
+
+src/netserve.o: src/netserve.cpp.o
+
+.PHONY : src/netserve.o
+
+# target to build an object file
+src/netserve.cpp.o:
+	$(MAKE) -f CMakeFiles/mymain.dir/build.make CMakeFiles/mymain.dir/src/netserve.cpp.o
+.PHONY : src/netserve.cpp.o
+
+src/netserve.i: src/netserve.cpp.i
+
+.PHONY : src/netserve.i
+
+# target to preprocess a source file
+src/netserve.cpp.i:
+	$(MAKE) -f CMakeFiles/mymain.dir/build.make CMakeFiles/mymain.dir/src/netserve.cpp.i
+.PHONY : src/netserve.cpp.i
+
+src/netserve.s: src/netserve.cpp.s
+
+.PHONY : src/netserve.s
+
+# target to generate assembly for a file
+src/netserve.cpp.s:
+	$(MAKE) -f CMakeFiles/mymain.dir/build.make CMakeFiles/mymain.dir/src/netserve.cpp.s
+.PHONY : src/netserve.cpp.s
+
 src/video.o: src/video.cpp.o
 
 .PHONY : src/video.o
@@ -309,6 +363,12 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/netcheck.o"
+	@echo "... src/netcheck.i"
+	@echo "... src/netcheck.s"
+	@echo "... src/netserve.o"
+	@echo "... src/netserve.i"
+	@echo "... src/netserve.s"
 	@echo "... src/video.o"
 	@echo "... src/video.i"
 	@echo "... src/video.s"

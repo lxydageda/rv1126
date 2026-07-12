@@ -11,12 +11,17 @@ extern "C"{
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <sys/time.h>
 #include <unistd.h>
 
 #include "common/sample_common.h"
 #include "rkmedia_api.h"
 #include "librtsp/rtsp_demo.h"
 #include "rkmedia_venc.h"
+
+#include <libavdevice/avdevice.h>
+#include <libavformat/avformat.h>
+#include <libavcodec/avcodec.h>
 }
 #include <opencv2/opencv.hpp>
 using namespace cv;

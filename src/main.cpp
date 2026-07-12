@@ -2,40 +2,54 @@
 #include "video.h"
 #include "audio.h"
 #include "lxy_muxer.h"
-FILE *fp;
-void sig_fun(int mun)
+#include "netserve.h"
+extern volatile int g_server_running;  // 声明全局变量
+void *server_thread(void *arg)
 {
-    RK_MPI_VI_DisableChn(0,0);
-    SAMPLE_COMM_ISP_Stop(0);
-    exit(0);
+    printf("Starting audio server thread...\n");
+    serve_set();  // 调用服务器函数（阻塞）
+    return NULL;
+}
+void sig_fun(int sig)
+{
+    printf("Main received signal %d\n", sig);
+    g_server_running = 0; 
 }
 int main()
 {
-  
-    signal(2,sig_fun);
+    signal(SIGTERM, sig_fun);
+    signal(SIGINT, sig_fun);
+    /* 
     RK_MPI_SYS_Init();
     SAMPLE_COMM_ISP_Init(0, RK_AIQ_WORKING_MODE_NORMAL, RK_FALSE, "/oem/etc/iqfiles/");
     SAMPLE_COMM_ISP_Run(0);
     SAMPLE_COMM_ISP_SetFrameRate(0, 30); 
-    /* //录音频 
+    init_rtsp0();
+    init_rtsp1();
     ai_set();
-    aenc_set();
-    ai_aenc_Bind();
-    aenc_callcb(); 
-    //放音频*/
-  /*   ao_set();
-    adec_set();
-    test_read_adec();  */
-    init_rtsp();
     vi_set();
-    venc_set(IMAGE_TYPE_NV12,1920,1080);
-    vi_venc_bind();
-    venc_register_cb();
-    ai_set();
-    aenc_set();
-    ai_aenc_Bind();
+    RGA0_set();
+    RGA1_set();
+    RGA2_set();
+    vi_rga0_bind_register_cb();
+    vi_rga1_bind_register_cb();
+    vi_rga2_bind_register_cb();
+    aenc0_set();
+    aenc1_set();
+    ai_aenc0_Bind();
+    ai_aenc1_Bind();
     aenc_callcb();
-    while(1)
+    venc0_set(IMAGE_TYPE_RGB888,1920,1080);
+    venc1_set(IMAGE_TYPE_RGB888,640,480);
+    venc2_set(IMAGE_TYPE_RGB888,640,480);
+    venc0_register_cb();
+    venc1_register_cb();
+    muxer_set();
+ */
+    pthread_t tid;
+    pthread_create(&tid,NULL,server_thread,NULL);
+    pthread_detach(tid); 
+    while(g_server_running)
     {
         
     }

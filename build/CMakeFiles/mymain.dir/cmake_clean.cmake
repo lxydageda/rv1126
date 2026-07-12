@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mymain.dir/src/audio.cpp.o"
   "CMakeFiles/mymain.dir/src/lxy_muxcer.cpp.o"
   "CMakeFiles/mymain.dir/src/main.cpp.o"
+  "CMakeFiles/mymain.dir/src/netcheck.cpp.o"
+  "CMakeFiles/mymain.dir/src/netserve.cpp.o"
   "CMakeFiles/mymain.dir/src/video.cpp.o"
   "mymain"
   "mymain.pdb"
